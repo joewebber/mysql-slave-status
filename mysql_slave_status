@@ -1,0 +1,6 @@
+#!/bin/sh
+USER=root
+PASS=123456789
+EMAIL=email@example.com
+SLAVE_STATUS=`mysql -u $USER -p$PASS -e "SHOW SLAVE STATUS \G"`
+echo "$SLAVE_STATUS" | mail -s "MySQL Replication Slave Status" $EMAIL
