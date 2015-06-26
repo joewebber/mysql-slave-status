@@ -3,6 +3,6 @@ I run this on a nightly cron to catch replication errors.
 
 Usage
 =====
-Make sure file is executable by root (or cron) user
+Make sure file is executable by root (or cron) user. Then run:
 
-`sh mysql_slave_status`
+>sh mysql_slave_status
